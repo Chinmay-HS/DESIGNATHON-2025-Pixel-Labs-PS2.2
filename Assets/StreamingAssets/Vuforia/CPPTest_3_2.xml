@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="B5_2" size="10.000000 14.186047" />
+    <ImageTarget name="B3_2" size="15.000000 10.601604" />
+    <ImageTarget name="B5" size="10.000000 14.148802" />
+    <ImageTarget name="B4" size="10.000000 14.144385" />
+    <ImageTarget name="B2" size="10.000000 14.146188" />
+    <ImageTarget name="B1" size="10.000000 14.148802" />
+  </Tracking>
+</QCARConfig>

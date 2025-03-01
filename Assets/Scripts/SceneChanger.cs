@@ -7,13 +7,8 @@ public class SceneChanger : MonoBehaviour
 {
     public string sceneName;
 
-    public void ChangeScene(string sceneName)
+    public void changeScene()
     {
         SceneManager.LoadScene(sceneName);
     }
-
-    public void OpenUrl(string url)
-    {
-        Application.OpenURL(url);
-    }
-}
+} 

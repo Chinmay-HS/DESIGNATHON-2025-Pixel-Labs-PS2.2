@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using CW.Common;
 
 namespace CW.Common
 {
 	/// <summary>This component will change the light intensity based on the current render pipeline.</summary>
 	[ExecuteInEditMode]
 	[RequireComponent(typeof(Light))]
-	[AddComponentMenu("CW/Common/CW Light Intensity")]
+	[HelpURL(CwShared.HelpUrlPrefix + "CwLightIntensity")]
+	[AddComponentMenu(CwShared.ComponentMenuPrefix + "Light Intensity")]
 	public class CwLightIntensity : MonoBehaviour
 	{
 		/// <summary>All light values will be multiplied by this before use.</summary>
@@ -51,15 +51,17 @@ namespace CW.Common
 
 		protected virtual void Update()
 		{
-			if (CwHelper.IsBIRP == true)
+			var pipe = CwShaderBundle.DetectProjectPipeline();
+
+			if (CwShaderBundle.IsStandard(pipe) == true)
 			{
 				ApplyIntensity(intensityInStandard);
 			}
-			else if (CwHelper.IsURP == true)
+			else if (CwShaderBundle.IsURP(pipe) == true)
 			{
 				ApplyIntensity(intensityInURP);
 			}
-			else if (CwHelper.IsHDRP == true)
+			else if (CwShaderBundle.IsHDRP(pipe) == true)
 			{
 				ApplyIntensity(intensityInHDRP);
 			}
