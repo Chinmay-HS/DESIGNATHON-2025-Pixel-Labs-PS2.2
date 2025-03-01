@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2182329455334652528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6228367407050739055}
+  - component: {fileID: 2087186060484051261}
+  m_Layer: 0
+  m_Name: SceneSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6228367407050739055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2182329455334652528}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 57.46889, y: 29.980362, z: 69.34388}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2087186060484051261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2182329455334652528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5754df4bddeb8e945a1bdbbeade8f15e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  house1: {fileID: 0}
+  house1campos: {fileID: 0}
+  house2: {fileID: 0}
+  house2campos: {fileID: 0}
+  house3: {fileID: 0}
+  house3campos: {fileID: 0}
+  house4: {fileID: 0}
+  house4campos: {fileID: 0}
+  house5: {fileID: 0}
+  house5campos: {fileID: 0}
+  fpsplayer: {fileID: 0}
+  fpsplayerh5: {fileID: 0}
+  m1: {fileID: 0}
+  m2: {fileID: 0}
+  m3: {fileID: 0}
+  m4: {fileID: 0}
+  m5: {fileID: 0}
