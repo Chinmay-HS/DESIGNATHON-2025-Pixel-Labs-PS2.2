@@ -52,6 +52,20 @@ ExportedObj/
 *.pdb.meta
 *.mdb.meta
 
+# Ignore cache files
+*.ilk
+*.pdb
+*.obj
+*.o
+*.so
+*.lo
+*.la
+*.sln.ide/
+*.sdf
+*.db
+*.opendb
+*.VC.db
+
 # Unity3D generated file on crash reports
 sysinfo.txt
 
@@ -67,6 +81,26 @@ crashlytics-build.properties
 
 # Packed Addressables
 /[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Ignore metadata and analytics
+*.meta
+*.pidb
+*.tlog
+*.log
+*.psess
+*.pidb
+
+# Ignore lightmap and shader caches
+Assets/**/Lightmap-*.*
+Assets/**/ReflectionProbe-*.*
+Assets/**/LightingData.asset
+Assets/**/ShaderCache/
+
+# Ignore all Mac OS generated files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
 
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
