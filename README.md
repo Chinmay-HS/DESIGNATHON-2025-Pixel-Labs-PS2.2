@@ -1,25 +1,26 @@
-# DESIGNATHON-2025-Pixel-Labs-PS2.2
+# DESIGNATHON-2025: Unity AR/VR Construction Planning Platform
 
-# Unity AR/VR Construction Planning Platform
+## 📌 Overview
+The Unity AR/VR Construction Planning Platform is designed to enhance collaboration in construction projects by integrating real-time **3D modeling, AI-driven analysis, and AR visualization**. The platform enables **builders, 3D artists, and stakeholders** to interact with construction designs seamlessly.
 
-## Target Devices
+## 🎯 Target Devices
 - **Phase 1:** Android Tablets
 - **Phase 2:** iPads
 - **Phase 3:** Mobile Phones
 
-## 1. User Roles & Responsibilities
+## 🔑 1. User Roles & Responsibilities
 
 ### **Role-Based Access**
 
 | Role | Responsibilities |
 |------|----------------|
-| **Admin/Organization Owner** | - Creates the organization if not part of one. <br> - Manages team roles & permissions. <br> - Monitors projects & access control. |
+| **Admin/Organization Owner** | - Creates an organization if not part of one. <br> - Manages team roles & permissions. <br> - Monitors projects & access control. |
 | **Builder (Project Owner)** | - Uploads & manages blueprints. <br> - Assigns access to 3D artists. <br> - Approves submitted 3D models. <br> - Reviews cost estimation & structural integrity reports. |
 | **3D Artist** | - Works on assigned parts of the model. <br> - Submits 3D elements for approval. <br> - Collaborates with other artists in real-time. |
 | **User (Client/Stakeholder)** | - Views available 3D models. <br> - Prints physical blueprints. <br> - Uses mobile AR to explore models. <br> - Adds interior elements to models. <br> - Sees real-time model updates. |
 | **AI System (Automated Agent)** | - Runs cost estimation based on material & design. <br> - Evaluates structural integrity. <br> - Provides insights for optimization. |
 
-## 2. Application Architecture
+## 🏗 2. Application Architecture
 
 ### **A. Core Functional Modules**
 
@@ -32,7 +33,7 @@
 | **AI-Powered Analysis** | - Cost estimation based on design & materials. <br> - Structural integrity simulation with physics-based stress testing. |
 | **Real-Time Sync & Notifications** | - Updates sync across devices instantly. <br> - Builders get notifications when models are updated. |
 
-## 3. Development Tech Stack
+## 💻 3. Development Tech Stack
 
 | Component | Technology |
 |-----------|------------|
@@ -44,7 +45,26 @@
 | **AI & Simulation** | Unity ML-Agents, Python (TensorFlow/PyTorch for structural analysis) |
 | **UI & Interaction** | Unity UI Toolkit, Shader Graph for custom rendering |
 
-## 4. User Journey
+## 🚀 4. Implementation Details
+
+### **A. Backend & Authentication**
+- Firebase Authentication for **Google, Email, Apple Sign-in**.
+- Firestore for **user role management & project data storage**.
+- Cloud Functions for **real-time processing of cost and integrity analysis**.
+
+### **B. Real-Time Collaboration**
+- **Photon PUN / Unity Netcode** enables multiple users to work on **3D models simultaneously**.
+- **Version control system** tracks changes and prevents conflicts.
+
+### **C. AR/VR Visualization**
+- **ARCore & ARKit** for placing models in real-world environments.
+- **OpenXR** support for future expansion into VR headsets.
+
+### **D. AI-Powered Cost & Structural Analysis**
+- **Physics-Informed Neural Networks (PINNs)** for stress & load testing.
+- **Regression models (XGBoost/LightGBM)** for cost prediction.
+
+## 📌 5. User Journey
 
 ### **A. Builder Flow**
 1. Logs in → Creates an organization (if new)
@@ -68,7 +88,7 @@
 4. Adds interior elements (furniture, walls, textures)
 5. Sees real-time changes made by other stakeholders
 
-## 5. Features Breakdown by Device
+## 📱 6. Features Breakdown by Device
 
 | Feature | Tablet | Phone |
 |---------|--------|-------|
@@ -77,4 +97,26 @@
 | **AR Model Viewing** | ✅ | ✅ |
 | **Interior Customization** | ✅ | ✅ |
 | **Cost Estimation & AI Analysis** | ✅ | ✅ |
+
+## 🎨 7. UI Development
+https://www.figma.com/design/FRIGY8OzF9QR2PJswBapP8/VNR-Design-A-Thon-2025-Q1?node-id=4-6&t=O2lwnkEQNzp0F3Px-1
+
+
+## 🔮 8. Future Scope
+
+| Feature | Future Implementation |
+|---------|------------------------|
+| **VR Support** | Extend compatibility to **VR headsets (Meta Quest, HTC Vive)**. |
+| **BIM Model Import** | Full support for **Revit, IFC, and BIM file formats**. |
+| **Haptic Feedback** | Implement **haptic interactions** for a more immersive AR/VR experience. |
+| **AI-Based Design Optimization** | AI will suggest **optimal layouts** based on stress analysis. |
+| **Voice Commands** | Hands-free interaction using **speech-to-text AI models**. |
+
+## 📜 9. Conclusion
+The **Unity AR/VR Construction Planning Platform** streamlines collaboration between **builders, 3D artists, and stakeholders** by integrating **real-time 3D modeling, AR visualization, and AI-driven analysis**. With an **intuitive role-based access system and cloud-powered real-time sync**, this platform is set to revolutionize construction planning!
+
+---
+
+### 🏗 Built with ❤️ for DESIGNATHON-2025 by Pixel Labs 🚀
+
 
